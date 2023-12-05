@@ -1,0 +1,291 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Bubbles&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(/Background/bg\ 3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin: 0px;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+header .logo img {
+    height: 70px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgb(129, 0, 0);
+    overflow: hidden;
+    text-align: center; 
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block; 
+    margin: 0 50px; 
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration:dotted;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px; 
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: black; 
+}
+
+.hero {
+    position: relative;
+    height: 450px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover;
+}
+
+.hero-text {
+    max-width: 700px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 400px;
+    font-family: "Press Start 2P","consolas";
+    color: crimson;
+    text-decoration: dotted underline;
+}
+
+.hero-text p {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    left: 350px;
+    font-family:"Rubik Bubbles";
+    color: azure;
+}    
+
+.hero-text a {
+    font-size: 1.8rem;
+    position: relative;
+    left: 570px;
+    bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* General Section Styling */
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Shoe Collection Grid Styles */
+.shoe-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    left: 190px;
+}
+
+.shoe-item {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.shoe-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.shoe-item h3 {
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .shoe-collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shoe-item img {
+        max-width: 200px;
+    }
+}
+
+.about-us {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Customer Testimonials Section */
+.testimonials {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonial {
+    background-color: #444;
+    padding: 1rem;
+    border-radius: 5px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Center align text in sections */
+.about-us p, .testimonials p, .newsletter p {
+    text-align: center;
+}
+
+/* Style for the subscribe button */
+.newsletter button {
+    background-color: #04AA6D;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #fff;
+    color: #04AA6D;
+}
+
+/* Contact Us Page Styles */
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #222;
+    color: #d89b9b;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #04AA6D;
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 0.5rem 0;
+    }
+    .navbar {
+        font-size: 0.8rem;
+    }
+    
+}

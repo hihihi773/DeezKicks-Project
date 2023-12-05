@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(/Background/bg\ 3.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    margin: 0px;
+}
+
+
+/* Header styles */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+header .logo img {
+    height: 70px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgb(129, 0, 0);
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Shoe collection grid styles */
+.shoe-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.shoe-item {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.shoe-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.shoe-item h3 {
+    margin-top: 0.5rem;
+}
+
+/* Responsive grid for shoe collection */
+@media screen and (max-width: 768px) {
+    .shoe-collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shoe-item img {
+        max-width: 200px;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 0.5rem 0;
+    }
+    .navbar {
+        font-size: 0.8rem;
+    }
+    
+}

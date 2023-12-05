@@ -1,0 +1,140 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(/Background/bg\ 3.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    margin: 0px;
+}
+
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+header .logo img {
+    height: 70px;
+}
+
+.navbar {
+    background-color: rgb(129, 0, 0);
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: dotted;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #04AA6D;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #007D4E;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar li {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        padding: 0.5rem 0;
+    }
+    .navbar {
+        font-size: 0.8rem;
+    }
+    
+}
